@@ -49,7 +49,7 @@ public class UserServiceImpl implements UserService {
 		
 		try {
 			
-			userDataTransform.UserDataTransform(userRequest, userResponseFields);
+			userDataTransform.UserDataRequestTransform(userRequest, userResponseFields);
 			userResponseFields.setMessage(CommonMessageEnum.RECORD_INSERT_SUCCESS.getValue());;
 			userResponseFields.setCode(200);
 			userResponseFields.setStatus("success");
