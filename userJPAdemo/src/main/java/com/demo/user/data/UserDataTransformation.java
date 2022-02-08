@@ -9,7 +9,7 @@ import com.demo.user.responseBean.UserResponseFields;
 
 public interface UserDataTransformation {
 
-	void UserDataTransform(UserRequest userRequest , UserResponseFields userResponseFields);
+	void UserDataRequestTransform(UserRequest userRequest , UserResponseFields userResponseFields);
 	void getUserDetailsById(Integer userid , UserResponseFields userResponseFields);
 	
 	
