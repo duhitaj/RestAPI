@@ -20,7 +20,7 @@ public class UserDataTransformationImpl implements UserDataTransformation{
 	
 	
 	@Override
-	public void UserDataTransform(UserRequest userRequest, UserResponseFields userResponseFields) {
+	public void UserDataRequestTransform(UserRequest userRequest, UserResponseFields userResponseFields) {
 		// TODO Auto-generated method stub
 		
 		
@@ -45,7 +45,7 @@ private void createUserT(UserRequestFields userRequestFields,UserT userT) {
 			userT.setEmail(userRequestFields.getEmail());
 			userT.setStatus(1);
 			
-			
+			userT = userTRepo.save(userT);
 			
 		}
 		catch(Exception e) {
