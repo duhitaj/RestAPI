@@ -17,7 +17,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Setter
 @Getter
-@Entity(name ="user")
+@Entity(name ="usersignin")
 public class UserT {
 	
 	
